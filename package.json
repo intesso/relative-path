@@ -1,0 +1,26 @@
+{
+  "name": "relative-path",
+  "version": "1.0.0",
+  "description": "return the absolute path for a given relative path",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intesso/relative-path.git"
+  },
+  "keywords": [
+    "relative",
+    "path",
+    "absolute",
+    "path",
+    "resolution"
+  ],
+  "author": "Andi Neck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intesso/relative-path/issues"
+  },
+  "homepage": "https://github.com/intesso/relative-path"
+}
