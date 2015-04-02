@@ -1,7 +1,7 @@
 {
   "name": "relative-path",
-  "version": "1.0.0",
-  "description": "return the absolute path for a given relative path",
+  "version": "1.0.1",
+  "description": "returns the absolute path for a given relative path",
   "main": "index.js",
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 # relative-path
-return the absolute path for a given relative path
+returns the absolute path for a given relative path
 
-it is a tiny function
+it's just a tiny helper function:
 
 ```js
 function getAbsolutePath(relativePath) {
@@ -26,6 +26,5 @@ p('./views/login.ejs');
 // will return the resolved absolute path.
  ```
 
- ## license
- MIT
- 
+## license
+MIT
