@@ -1,5 +1,6 @@
 var path = require('path');
-module.exports = function getAbsolutePath(relativePath) {
+module.exports = function getAbsolutePath() {
   var dir = path.dirname(module.parent.filename);
-  return path.join(dir, relativePath);
+  var pathArgs = [dir].concat(Array.prototype.splice.call(arguments, 0));
+  return path.join.apply(path, pathArgs);
 };
