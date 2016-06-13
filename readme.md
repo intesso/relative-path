@@ -4,9 +4,10 @@ returns the absolute path for a given relative path
 it's just a tiny helper function:
 
 ```js
-function getAbsolutePath(relativePath) {
+function getAbsolutePath() {
   var dir = path.dirname(module.parent.filename);
-  return path.join(dir, relativePath);
+  var pathArgs = [dir].concat(Array.prototype.splice.call(arguments, 0));
+  return path.join.apply(path, pathArgs);
 };
 ```
 
@@ -22,8 +23,11 @@ npm install --save relative-path
 ```js
 var p = require('relative-path');
 
-p('./views/login.ejs');
 // will return the resolved absolute path.
+p('./views/login.ejs');
+
+// or
+p('./views', 'login.ejs')
  ```
 
 ## license
